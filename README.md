@@ -13,7 +13,7 @@ var foo = list.map(function (item) {
   return React.createElement(
     "div",
     {
-      key: "_4dnya2lxr"
+      key: '_' + Math.random().toString(36).substr(2, 9);
     },
     React.createElement(
       "span",
@@ -22,5 +22,6 @@ var foo = list.map(function (item) {
     )
   );
 });
+
 
 ```
