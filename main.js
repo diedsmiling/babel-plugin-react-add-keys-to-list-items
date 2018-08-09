@@ -41,7 +41,7 @@ module.exports = function addListKeyd({types: t}) {
           return void path.traverse(MapVisitor, {indexVar})
         }
 
-        // Цe need to be sure that argument is an anonymous function
+        // We need to be sure that argument is an anonymous function
         // or seek for declared function
         const [argument] = path.get("arguments")
         const indexVar = argument.scope.generateUid("key")
