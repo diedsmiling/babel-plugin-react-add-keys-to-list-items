@@ -4,7 +4,8 @@
   "description": "Automatically add unique \"key\" attribute to the list items inside .map() loops in JSX",
   "main": "src/index.js",
   "scripts": {
-    "staged": "node_modules/.bin/lint-staged"
+    "staged": "node_modules/.bin/lint-staged",
+    "precommit": "yarn staged"
   },
   "repository": {
     "type": "git",
