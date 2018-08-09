@@ -35,6 +35,8 @@ module.exports = function addListKeyd({types: t}) {
         }
 
         const params = path.get("arguments")[0].get("params")
+
+        // Use second argument when it was aleady declared
         if (params.length > 1) {
           const indexVar = params[1].node.name
 
@@ -42,7 +44,6 @@ module.exports = function addListKeyd({types: t}) {
         }
 
         // We need to be sure that argument is an anonymous function
-        // or seek for declared function
         const [argument] = path.get("arguments")
         const indexVar = argument.scope.generateUid("key")
 
