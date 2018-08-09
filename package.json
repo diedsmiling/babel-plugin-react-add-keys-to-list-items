@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-add-keys-to-list-items",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Automatically add unique \"key\" attribute to the list items inside .map() loops in JSX",
   "main": "main.js",
   "scripts": {

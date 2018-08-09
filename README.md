@@ -1,24 +1,24 @@
 Transforms:
 
-`
-const foo = list.map((item) => <div><span>foo</span></div>)
-`
+```js
+const List = () => <ul>{list.map(value => <li>{value}</li>)}</ul>
+```
 
 to:
 
-```
+```js
 "use strict";
 
-var foo = list.map(function (item) {
+var foo = list.map(function (value, _key) {
   return React.createElement(
     "div",
     {
-      key: '_' + Math.random().toString(36).substr(2, 9);
+      key: 'key::' + _key;
     },
     React.createElement(
       "span",
       null,
-      "foo"
+      value
     )
   );
 });
