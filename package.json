@@ -2,15 +2,12 @@
   "name": "babel-plugin-react-add-keys-to-list-items",
   "version": "1.0.0",
   "description": "Automatically add unique \"key\" attribute to the list items inside .map() loops in JSX",
-  "main": "src/index.js",
+  "main": "main.js",
   "scripts": {
     "staged": "node_modules/.bin/lint-staged",
     "precommit": "yarn staged"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/diedsmiling/babel-plugin-react-add-keys-to-list-items.git"
-  },
+  "repository": "diedsmiling/babel-plugin-react-add-keys-to-list-items",
   "keywords": [
     "babel",
     "babel-plugin",
@@ -25,7 +22,6 @@
   "bugs": {
     "url": "https://github.com/diedsmiling/babel-plugin-react-add-keys-to-list-items/issues"
   },
-  "homepage": "https://github.com/diedsmiling/babel-plugin-react-add-keys-to-list-items#readme",
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-es2015": "6.24.1",
