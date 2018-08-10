@@ -1,0 +1,31 @@
+{
+  "plugins": [
+    "import",
+    "ava"
+  ],
+  "extends": [
+    "airbnb-base",
+    "plugin:ava/recommended"
+  ],
+  "rules": {
+    "semi": ["error", "never"],
+    "linebreak-style": ["error", "unix"],
+    "eol-last": ["error", "unix"],
+    "object-curly-spacing": ["error", "never"],
+    "array-bracket-spacing": ["error", "never"],
+    "arrow-parens": ["error", "as-needed"],
+    "no-tabs": ["error"],
+    "no-trailing-spaces": ["error"],
+    "max-len": [
+      "error", {
+        "code": 80
+      }
+    ],
+    "yoda": ["error"],
+    "no-confusing-arrow": 0,
+    "comma-dangle": 0,
+    "no-unused-vars": ["warn"],
+    "quotes": ["error", "double"],
+    "no-void": 0
+  }
+}
